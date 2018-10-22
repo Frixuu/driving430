@@ -5,26 +5,26 @@ void InitButtons()
   P4DIR &= 0xf0;
 }
 
-int ButtonDown(int numer)
+int ButtonDown(int number)
 {
-  switch(numer)
+  switch(number)
   {
-  case 1:
-  return ~P4IN & BIT4;
-  case 2:
-  return ~P4IN & BIT5;
-  case 3:
-  return ~P4IN & BIT6;
-  case 4:
-  return ~P4IN & BIT7;
-  default:
-    return 0;
+    case 1:
+      return ~P4IN & BIT4;
+    case 2:
+      return ~P4IN & BIT5;
+    case 3:
+      return ~P4IN & BIT6;
+    case 4:
+      return ~P4IN & BIT7;
+    default:
+      return 0;
   }
 }
 
-int ButtonUp(int numer)
+int ButtonUp(int number)
 {
-  return !ButtonDown(numer);
+  return !ButtonDown(number);
 }
 
 int AnyButtonDown()

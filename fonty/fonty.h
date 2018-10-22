@@ -10,6 +10,6 @@
 #define WROG_BARIERKA_GORA 6
 #define WROG_BARIERKA_DOL 7
 
-void ZaladujFonty();
+void LoadFonts();
 
 #endif

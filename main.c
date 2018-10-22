@@ -5,10 +5,9 @@
 #include "fonty/fonty.h"
 #include "input/input.h"
 
-unsigned char i;
 int Initialized;
 
-void main( void )
+void main(void)
 {
   Initialized = 0;
   unsigned int i;
@@ -28,7 +27,7 @@ void main( void )
   InitPortsLcd();
   InitLCD();
   clearDisplay();
-  ZaladujFonty();
+  LoadFonts();
   InitButtons();
   Initialized = 1;
   while(1){}
