@@ -1,3 +1,6 @@
+#ifndef PORTYLCD_H
+#define PORTYLCD_H
+
 #define          LCD_Data           P2OUT
 #define          _100us             100                //
 #define          _10us              10                 //
@@ -24,3 +27,5 @@
 #define		CG_RAM_ADDR		0x40	        //
 
 void InitPortsLcd(void);
+
+#endif

@@ -1,3 +1,6 @@
+#ifndef FONTY_H
+#define FONTY_H
+
 #define BARIERKA_GORA 0
 #define BARIERKA_DOL 1
 #define GRACZ_BEZ_BARIERKI 2
@@ -8,3 +11,5 @@
 #define WROG_BARIERKA_DOL 7
 
 void ZaladujFonty();
+
+#endif
