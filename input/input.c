@@ -22,6 +22,11 @@ int ButtonDown(int numer)
   }
 }
 
+int ButtonUp(int numer)
+{
+  return !ButtonDown(numer);
+}
+
 int AnyButtonDown()
 {
   return ButtonDown(1) || ButtonDown(2) || ButtonDown(3) || ButtonDown(4);

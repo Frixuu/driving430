@@ -3,6 +3,7 @@
 
 void InitButtons();
 int ButtonDown(int);
+int ButtonUp(int);
 int AnyButtonDown();
 
 #endif
