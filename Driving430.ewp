@@ -1682,6 +1682,12 @@
     </settings>
   </configuration>
   <file>
+    <name>$PROJ_DIR$\utils\cyfry.c</name>
+  </file>
+  <file>
+    <name>$PROJ_DIR$\utils\cyfry.h</name>
+  </file>
+  <file>
     <name>$PROJ_DIR$\fonty\fonty.c</name>
   </file>
   <file>
@@ -1707,6 +1713,12 @@
   </file>
   <file>
     <name>$PROJ_DIR$\lcd\portyLcd.h</name>
+  </file>
+  <file>
+    <name>$PROJ_DIR$\random\random.c</name>
+  </file>
+  <file>
+    <name>$PROJ_DIR$\random\random.h</name>
   </file>
   <file>
     <name>$PROJ_DIR$\gra\silnik.c</name>

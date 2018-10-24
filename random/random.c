@@ -1,8 +1,8 @@
 #include "random.h"
 
-int randomseed = 1;
+unsigned int randomseed = 2137;
 
-int NextRandom()
+unsigned int NextRandom()
 {
   randomseed *= MULTIPLIER;
   randomseed += INCREMENT;

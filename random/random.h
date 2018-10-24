@@ -2,7 +2,7 @@
 #define RANDOM_H
 
 #define MULTIPLIER 7931
-#define INCREMENT 29064
-int NextRandom();
+#define INCREMENT 29067
+unsigned int NextRandom();
 
 #endif

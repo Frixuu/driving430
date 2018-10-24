@@ -5,6 +5,17 @@
   <configuration>
     <name>Debug</name>
     <outputs>
+      <file>$PROJ_DIR$\fonty\fonty.c</file>
+      <file>$PROJ_DIR$\fonty\fonty.h</file>
+      <file>$PROJ_DIR$\input\input.c</file>
+      <file>$PROJ_DIR$\input\input.h</file>
+      <file>$PROJ_DIR$\lcd\lcd.c</file>
+      <file>$PROJ_DIR$\lcd\lcd.h</file>
+      <file>$PROJ_DIR$\main.c</file>
+      <file>$PROJ_DIR$\lcd\portyLcd.c</file>
+      <file>$PROJ_DIR$\lcd\portyLcd.h</file>
+      <file>$PROJ_DIR$\gra\silnik.c</file>
+      <file>$PROJ_DIR$\gra\silnik.h</file>
       <file>$PROJ_DIR$\Debug\Obj\portyLcd.r43</file>
       <file>$PROJ_DIR$\Debug\Exe\Driving430.d43</file>
       <file>$PROJ_DIR$\Debug\Obj\Driving430.pbd</file>
@@ -12,38 +23,185 @@
       <file>$TOOLKIT_DIR$\config\multiplier.xcl</file>
       <file>$TOOLKIT_DIR$\config\lnk430F149.xcl</file>
       <file>$PROJ_DIR$\Debug\Obj\lcd.r43</file>
-      <file>$PROJ_DIR$\lcd\portyLcd.c</file>
       <file>$TOOLKIT_DIR$\inc\msp430x14x.h</file>
       <file>$TOOLKIT_DIR$\inc\intrinsics.h</file>
       <file>$PROJ_DIR$\Debug\Obj\lcd.pbi</file>
       <file>$TOOLKIT_DIR$\inc\in430.h</file>
       <file>$PROJ_DIR$\Debug\Obj\portyLcd.pbi</file>
       <file>$TOOLKIT_DIR$\lib\dlib\dl430fn.r43</file>
-      <file>$PROJ_DIR$\main.c</file>
       <file>$PROJ_DIR$\Debug\Obj\main.pbi</file>
-      <file>$PROJ_DIR$\gra\silink.h</file>
       <file>$PROJ_DIR$\Debug\Obj\silnik.pbi</file>
-      <file>$PROJ_DIR$\input\input.h</file>
-      <file>$PROJ_DIR$\gra\silnik.h</file>
       <file>$PROJ_DIR$\Debug\Obj\fonty.pbi</file>
-      <file>$PROJ_DIR$\fonty\fonty.h</file>
       <file>$PROJ_DIR$\Debug\Obj\fonty.r43</file>
       <file>$PROJ_DIR$\Debug\Obj\input.r43</file>
       <file>$PROJ_DIR$\Debug\Obj\input.pbi</file>
-      <file>$PROJ_DIR$\lcd\portyLcd.h</file>
-      <file>$PROJ_DIR$\lcd\lcd.c</file>
-      <file>$PROJ_DIR$\input\input.c</file>
-      <file>$PROJ_DIR$\lcd\lcd.h</file>
       <file>$PROJ_DIR$\Debug\Obj\silnik.r43</file>
-      <file>$PROJ_DIR$\gra\silnik.c</file>
-      <file>$PROJ_DIR$\fonty\fonty.c</file>
+      <file>$PROJ_DIR$\random\random.h</file>
+      <file>$PROJ_DIR$\Debug\Obj\droga.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\random.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\cyfry.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\random.r43</file>
+      <file>$PROJ_DIR$\random\random.c</file>
+      <file>$PROJ_DIR$\Debug\Obj\cyfry.r43</file>
+      <file>$PROJ_DIR$\gra\droga.h</file>
+      <file>$PROJ_DIR$\gra\droga.c</file>
+      <file>$PROJ_DIR$\Debug\Obj\droga.r43</file>
+      <file>$PROJ_DIR$\utils\cyfry.h</file>
+      <file>$PROJ_DIR$\utils\cyfry.c</file>
     </outputs>
+    <file>
+      <name>[ROOT_NODE]</name>
+      <outputs>
+        <tool>
+          <name>XLINK</name>
+          <file> 12</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\fonty\fonty.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 26</file>
+        </tool>
+        <tool>
+          <name>ICC430</name>
+          <file> 27</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 5 8</file>
+        </tool>
+        <tool>
+          <name>ICC430</name>
+          <file> 5 8</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\input\input.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 29</file>
+        </tool>
+        <tool>
+          <name>ICC430</name>
+          <file> 28</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 18 21 19</file>
+        </tool>
+        <tool>
+          <name>ICC430</name>
+          <file> 18 21 19</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\lcd\lcd.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 20</file>
+        </tool>
+        <tool>
+          <name>ICC430</name>
+          <file> 17</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 18 21 19 5 8</file>
+        </tool>
+        <tool>
+          <name>ICC430</name>
+          <file> 18 21 19 5 8</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\main.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 24</file>
+        </tool>
+        <tool>
+          <name>ICC430</name>
+          <file> 14</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 18 21 19 5 8 10 1 3</file>
+        </tool>
+        <tool>
+          <name>ICC430</name>
+          <file> 18 21 19 5 8 10 1 3</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\lcd\portyLcd.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 22</file>
+        </tool>
+        <tool>
+          <name>ICC430</name>
+          <file> 11</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 18 21 19</file>
+        </tool>
+        <tool>
+          <name>ICC430</name>
+          <file> 18 21 19</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\gra\silnik.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 25</file>
+        </tool>
+        <tool>
+          <name>ICC430</name>
+          <file> 30</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 5 8 1 3 31 41</file>
+        </tool>
+        <tool>
+          <name>ICC430</name>
+          <file> 5 8 1 3 31 41</file>
+        </tool>
+      </inputs>
+    </file>
     <file>
       <name>$PROJ_DIR$\Debug\Exe\Driving430.d43</name>
       <inputs>
         <tool>
           <name>XLINK</name>
-          <file> 5 4 22 23 6 3 0 29 13</file>
+          <file> 16 15 37 27 28 17 14 11 35 30 23</file>
         </tool>
       </inputs>
     </file>
@@ -52,154 +210,72 @@
       <inputs>
         <tool>
           <name>BILINK</name>
-          <file> 20 24 10 15 12 17</file>
+          <file> 34 26 29 20 24 22 33 25</file>
         </tool>
       </inputs>
     </file>
     <file>
-      <name>[ROOT_NODE]</name>
+      <name>$PROJ_DIR$\random\random.c</name>
       <outputs>
-        <tool>
-          <name>XLINK</name>
-          <file> 1</file>
-        </tool>
-      </outputs>
-    </file>
-    <file>
-      <name>$PROJ_DIR$\lcd\portyLcd.c</name>
-      <outputs>
-        <tool>
-          <name>ICC430</name>
-          <file> 0</file>
-        </tool>
         <tool>
           <name>BICOMP</name>
-          <file> 12</file>
+          <file> 33</file>
+        </tool>
+        <tool>
+          <name>ICC430</name>
+          <file> 35</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 31</file>
+        </tool>
+        <tool>
+          <name>ICC430</name>
+          <file> 31</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\gra\droga.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 32</file>
+        </tool>
+        <tool>
+          <name>ICC430</name>
+          <file> 40</file>
         </tool>
       </outputs>
       <inputs>
         <tool>
           <name>ICC430</name>
-          <file> 8 11 9</file>
-        </tool>
-        <tool>
-          <name>BICOMP</name>
-          <file> 8 11 9</file>
+          <file> 38</file>
         </tool>
       </inputs>
     </file>
     <file>
-      <name>$PROJ_DIR$\main.c</name>
+      <name>$PROJ_DIR$\utils\cyfry.c</name>
       <outputs>
         <tool>
-          <name>ICC430</name>
-          <file> 3</file>
+          <name>BICOMP</name>
+          <file> 34</file>
         </tool>
         <tool>
-          <name>BICOMP</name>
-          <file> 15</file>
+          <name>ICC430</name>
+          <file> 37</file>
         </tool>
       </outputs>
       <inputs>
         <tool>
-          <name>ICC430</name>
-          <file> 8 11 9 28 25 19 21 18</file>
-        </tool>
-        <tool>
           <name>BICOMP</name>
-          <file> 8 11 9 28 25 19 21 18</file>
+          <file> 18 21 19 5 8 41</file>
         </tool>
-      </inputs>
-    </file>
-    <file>
-      <name>$PROJ_DIR$\lcd\lcd.c</name>
-      <outputs>
         <tool>
           <name>ICC430</name>
-          <file> 6</file>
-        </tool>
-        <tool>
-          <name>BICOMP</name>
-          <file> 10</file>
-        </tool>
-      </outputs>
-      <inputs>
-        <tool>
-          <name>ICC430</name>
-          <file> 8 11 9 28 25</file>
-        </tool>
-        <tool>
-          <name>BICOMP</name>
-          <file> 8 11 9 28 25</file>
-        </tool>
-      </inputs>
-    </file>
-    <file>
-      <name>$PROJ_DIR$\input\input.c</name>
-      <outputs>
-        <tool>
-          <name>ICC430</name>
-          <file> 23</file>
-        </tool>
-        <tool>
-          <name>BICOMP</name>
-          <file> 24</file>
-        </tool>
-      </outputs>
-      <inputs>
-        <tool>
-          <name>ICC430</name>
-          <file> 8 11 9</file>
-        </tool>
-        <tool>
-          <name>BICOMP</name>
-          <file> 8 11 9</file>
-        </tool>
-      </inputs>
-    </file>
-    <file>
-      <name>$PROJ_DIR$\gra\silnik.c</name>
-      <outputs>
-        <tool>
-          <name>ICC430</name>
-          <file> 29</file>
-        </tool>
-        <tool>
-          <name>BICOMP</name>
-          <file> 17</file>
-        </tool>
-      </outputs>
-      <inputs>
-        <tool>
-          <name>ICC430</name>
-          <file> 28 25 21 18</file>
-        </tool>
-        <tool>
-          <name>BICOMP</name>
-          <file> 28 25 21 18</file>
-        </tool>
-      </inputs>
-    </file>
-    <file>
-      <name>$PROJ_DIR$\fonty\fonty.c</name>
-      <outputs>
-        <tool>
-          <name>ICC430</name>
-          <file> 22</file>
-        </tool>
-        <tool>
-          <name>BICOMP</name>
-          <file> 20</file>
-        </tool>
-      </outputs>
-      <inputs>
-        <tool>
-          <name>ICC430</name>
-          <file> 28 25</file>
-        </tool>
-        <tool>
-          <name>BICOMP</name>
-          <file> 28 25</file>
+          <file> 18 21 19 5 8 41</file>
         </tool>
       </inputs>
     </file>
